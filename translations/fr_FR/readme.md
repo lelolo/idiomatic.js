@@ -9,7 +9,7 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Idan Gazit [@idangazit](http://twitter.com/idangauzit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
@@ -887,7 +887,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	}
 
 	// 7.A.1.2
-	// Une meilleur approche est d'utiliser un object literal ou même un module:
+	// Une meilleure approche est d'utiliser un object literal ou même un module:
 
 	var switchObj = {
 		alpha: function() {
@@ -923,21 +923,21 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 
 	// 7.A.1.3
-	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+	// Si `foo` est une propriété de `switchObj` ou de `switchModule`, l'exécuter comme une méthode ...
 
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-	// If you know and trust the value of `foo`, you could even omit the OR check
-	// leaving only the execution:
+	// Si vous connaissez et avez confiance en la valeur de `foo`, vous pouvez même omettre la vérification de la relation objet.
+	// et ne laisser que l'exécution :
 
 	switchObj[ foo ]( args );
 
 	switchModule[ foo ]( args );
 
 
-	// This pattern also promotes code reusability.
+	// Ce modèle promeut également la réusabilité du code.
 
 	```
 
@@ -946,7 +946,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```javascript
 
 	// 7.B.1.1
-	// Bad:
+	// Mauvais :
 	function returnLate( foo ) {
 		var ret;
 
@@ -958,7 +958,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 		return ret;
 	}
 
-	// Good:
+	// Correct : 
 	function returnEarly( foo ) {
 
 		if ( foo ) {
@@ -1000,7 +1000,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 ## Appendice
 
-### Première virgule.
+### Virgule en début de ligne ('comma-first').
 
 
-Tout projet qui cite ce document comme son guide de style de base ne pourra accepter le formatage du code première virgule, sauf mention contraire.
+Tout projet qui cite ce document comme son guide de style de base ne pourra utiliser le formatage 'Comma-first', c'est à dire avec la virgule en début de signe, sauf mention contraire explicite de l'auteur du projet.
