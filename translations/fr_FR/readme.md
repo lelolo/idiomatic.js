@@ -1,6 +1,6 @@
 # Principe d'écriture d'un code Javascript cohérent et idiomatique
 
-## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenues. Pour Contribuer: "fork", "clone", "branch", "commit", "push", "pull request".
+## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenues. Pour contribuer : "fork", "clone", "branch", "commit", "push", "pull request".
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -9,7 +9,7 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangauzit), [github](https://github.com/idangazit)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
@@ -23,15 +23,17 @@
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
+* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 
 
-## Tout code, peu importe les bases sur lequels il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
+## Tout code, peu importe les bases sur lesquelles il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
 
 ### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont je suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
 
 ### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si elles ont un style commun, dans ce cas, il est important de respecter le style de chacun.
 
-> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi-même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
+> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi-même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez-le avec un maximum de clarté, non pour des préférences personnelles, mais pour être au plus près du besoin." - Idan Gazit
 
 ## Traductions
 
@@ -49,17 +51,19 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
-## Important, aspect non-idiomatique :
+## Important, aspect non idiomatique :
 
 ### Qualité du Code : indispensables, ressources et références
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [Plato](https://github.com/jsoverson/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [Editorconfig](http://editorconfig.org/)
 
 [Optimisation des outils de qualité de code par Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
@@ -67,7 +71,7 @@
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je ne suis pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine : ils sont conformes. En outre, ce sont des autorités sur le language.
+Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je ne suis pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine : ils sont conformes. En outre, ce sont des autorités sur le langage.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -77,12 +81,12 @@ Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LEC
 
 ### Processus de "build" et de déploiement
 
-Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, tester et minifier les fichiers afin d'avoir de meilleurs performances en production.
+Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, tester et minifier les fichiers afin d'avoir de meilleures performances en production.
 Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques, que nous soutenons dans notre projet.
 
 ### Testabilité
 
-Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implementation et de périmètre fonctionnel. Utiliser des démos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèques de test, aucune d'entre elles n'est approuvée plus que l'autre.
+Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implémentation et de périmètre fonctionnel. Utiliser des démos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèques de test, aucune d'entre elles n'est approuvée plus que l'autre.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -102,7 +106,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
  * [Divers](#misc)
  * [Native & Host Objects](#native)
  * [Commentaires](#comments)
- * [Un code, un language](#language)
+ * [Un code, un langage](#language)
 
 
 
@@ -122,11 +126,11 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
   - Ne jamais mélanger les espaces et les tabulations.
   - Avant d'écrire le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
-      - Pour la lisibilité, paramétrer votre éditeur avec une indentation de deux caractères &mdash; ce qui veut dire deux espaces ou une tabulation représentant deux espaces.
-  - Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
-      - Améliore la cohérence du code
-      - Elimine les espaces de fin de ligne
-      - Elimine les espaces utilisés pour des lignes blanches
+      - Pour la lisibilité, paramétrez votre éditeur avec une indentation de deux caractères &mdash; ce qui veut dire deux espaces ou une tabulation représentant deux espaces.
+  - Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont :
+      - Améliorer la cohérence du code
+      - Éliminer les espaces de fin de ligne
+      - Éliminer les espaces utilisées pour des lignes blanches
       - Améliorer la lisibilité de vos "commit" et des "diff"
 
 2. <a name="spacing">Une Syntaxe Précise</a>
@@ -163,7 +167,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 		// déclarations
 	}
 
-	// même mieux:
+	// même mieux :
 	var i,
 		length = 100;
 
@@ -202,13 +206,13 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 		num = 1,
 		undef;
 
-	// Notations littérales:
+	// Notations littérales :
 	var array = [],
 		object = {};
 
 	// 2.B.1.2
 	// Utiliser une unique déclaration `var` par portée de (fonction) améliore la
-	// lisibilité et permets de garder une déclaration séparée du corps de la fonction
+	// lisibilité et permet de garder une déclaration séparée du corps de la fonction
 	// (en adéquation avec la portée des variables JS)
 
 	// Mauvais
@@ -345,7 +349,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	D. La cohérence gagne toujours
 
 	Dans les sections 2.A-2.C, les règles d'espacement sont énoncées sous forme de recommandation avec un objectif simple et plus abouti : la cohérence.
-	Il est important de noter que les préférences de formatage, tel que les "espaces situés à l'intérieur de déclaration", doivent être considérés comme optionnels. Un _unique style_ doit exister pour tous les sources d'un projet.
+	Il est important de noter que les préférences de formatage, telles que les "espaces situées à l'intérieur de déclaration", doivent être considérées comme optionnelles. Un _unique style_ doit exister pour toutes les sources d'un projet.
 
 	```javascript
 
@@ -379,59 +383,59 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	3.A Types réels
 
-	* String:
+	* String :
 
 		`typeof variable === "string"`
 
-	* Number:
+	* Number :
 
 		`typeof variable === "number"`
 
-	* Boolean:
+	* Boolean :
 
 		`typeof variable === "boolean"`
 
-	* Object:
+	* Object :
 
 		`typeof variable === "object"`
 
-	* Array:
+	* Array :
 
 		`Array.isArray(arrayObject)`
 		(dans la mesure du possible)
 
-	* null:
+	* null :
 
 		`variable === null`
 
-	* null ou undefined:
+	* null ou undefined :
 
 		`variable == null`
 
-	* undefined:
+	* undefined :
 
-		* Variable Global:
+		* Variable globale :
 
 			* `typeof variable === "undefined"`
 
-		* Variable Local:
+		* Variable locale :
 
 			* `variable === undefined`
 
-		* Propriétés:
+		* Propriétés :
 			* `object.prop === undefined`
 			* `object.hasOwnProperty( prop )`
 			* `"prop" in object`
 
 
-	JavaScript est un langage typé dynamiquement - ce qui peut être votre meilleur ami comme votre pire ennemi : respectez donc les 'type', en appliquant les règles ci-dessus.
+	JavaScript est un langage typé dynamiquement - ce qui peut être votre meilleur ami comme votre pire ennemi : respectez donc les 'types', en appliquant les règles ci-dessus.
 
 
 	3.B Coercion de type
 
 	Considérons les implications de ce qui suit...
 
-	Etant donné ce code HTML:
+	Etant donné ce code HTML :
 
 	```html
 
@@ -452,12 +456,12 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	...
 
 	// Quelque part plus loin dans votre code, vous devez mettre à jour `foo`
-	// avec une nouvelle valeur issue de l'element 'input'
+	// avec une nouvelle valeur issue de l'élément 'input'
 
 	foo = document.getElementById("foo-input").value;
 
 	// Si vous deviez tester `typeof foo` maintenant, le résultat serait "string"
-	// Cela signifie que si vous aviez la logique testant `foo` comme suit:
+	// Cela signifie que si vous aviez la logique testant `foo` comme suit :
 
 	if ( foo === 1 ) {
 
@@ -469,10 +473,10 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	// 3.B.1.2
 
-	// Vous pouvez vous prémunir de ce problème en utilisant la coercion de type de l'opérateur unaire + ou -:
+	// Vous pouvez vous prémunir de ce problème en utilisant la coercion de type de l'opérateur unaire + ou - :
 
 	foo = +document.getElementById("foo-input").value;
-	      ^ opérateur unaire + convertissant à sa droite l'opérante en "number"
+	      ^ opérateur unaire + convertissant à sa droite l'opérande en "number"
 
 	// typeof foo;
 	// "number"
@@ -483,10 +487,10 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	}
 
-	// `important()` sera évaluer
+	// `important()` sera évalué
 	```
 
-	Voici quelques cas courants de coercion:
+	Voici quelques cas courants de coercion :
 
 
 	```javascript
@@ -606,7 +610,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 
 	// 4.1.3
-	// Lorsque vous évaluez si une chaine est non vide,
+	// Lorsque vous évaluez si une chaîne est non vide,
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( string !== "" ) ...
 
@@ -615,7 +619,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 
 	// 4.1.4
-	// A l'inverse, lorsque vous évaluez si une chaine est vide,
+	// A l'inverse, lorsque vous évaluez si une chaîne est vide,
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( string === "" ) ...
 
@@ -628,7 +632,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === true ) ...
 
-	// ...évaluer ce que cela signifie et bénéficier des tests primitifs:
+	// ...évaluez ce que cela signifie et bénéficiez des tests primitifs :
 	if ( foo ) ...
 
 
@@ -637,11 +641,11 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === false ) ...
 
-	// ...utilise la négation et la coercion de l'évaluation de la vérité:
+	// ...utilisez la négation et la coercion de l'évaluation de la vérité :
 	if ( !foo ) ...
 
-	// ...Soyez prudent, cela correspondra aux valeurs suivantes: 0, "", null, undefined, NaN
-	// Vous _DEVEZ_ dans ce cas tester la valeur `faux`, comme suit:
+	// ...Soyez prudent, cela correspondra aux valeurs suivantes : 0, "", null, undefined, NaN
+	// Vous _DEVEZ_ dans ce cas tester la valeur `faux`, comme suit :
 	if ( foo === false ) ...
 
 
@@ -650,10 +654,10 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === null || foo === undefined ) ...
 
-	// ...bénéficiez de la coercion de type ==, comme suit:
+	// ...bénéficiez de la coercion de type ==, comme suit :
 	if ( foo == null ) ...
 
-	// Souvenez vous, utiliser == vérifiera une égalité avec `null` et `null` & `undefined`
+	// Souvenez-vous, utiliser == vérifiera une égalité avec `null` et `null` & `undefined`
 	// mais pas `false`, "" ou 0
 	null == undefined
 
@@ -663,29 +667,29 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```javascript
 
 	// 4.2.1
-	// Cohercion de Type coercion et remarques
+	// Coercion de Type coercion et remarques
 
 	Preferez `===` à la place de `==` (à moins que le cas de test ne requiert la perte d'évaluation de type)
 
-	=== n'effectue pas de cohercion de type, ce qui signifie que:
+	=== n'effectue pas de coercion de type, ce qui signifie que :
 
 	"1" === 1;
 	// faux
 
-	== effectue la cohercion de type, ce qui signifie que:
+	== effectue la coercion de type, ce qui signifie que :
 
 	"1" == 1;
 	// vrai
 
 
 	// 4.2.2
-	// Booléens, valeurs de vérités et de négation
+	// Booléens, valeurs de vérité et de négation
 
-	Booléens: true, false
+	Booléens : true, false
 
-	sont vrais: "foo", 1
+	sont vrais : "foo", 1
 
-	sont faux: "", 0, null, undefined, NaN, void 0
+	sont faux : "", 0, null, undefined, NaN, void 0
 
 	```
 
@@ -718,7 +722,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 					return data;
 				},
 				setData: function( value ) {
-					// affecter une valeur `value` à `data` et le renvoyer
+					// affecter une valeur `value` à `data` et la renvoyer
 					return ( data = value );
 				}
 			};
@@ -755,7 +759,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 		};
 
 
-		// Appel du contructeur sans `new`, en utilisant cette syntaxe:
+		// Appel du contructeur sans `new`, en utilisant cette syntaxe :
 		var ctor = function( foo ) {
 			return new Ctor( foo );
 		};
@@ -771,9 +775,9 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 6. <a name="naming">Règles de nommage</a>
 
 
-	Vous n'êtes pas un compilateur ou un minificateur, il ne faut pas essayer d'être un.
+	Vous n'êtes pas un compilateur ou un minificateur, il ne faut pas essayer d'en être un.
 
-	Le code suivant est un exemple flagrant de ce qu'il ne faut pas faire:
+	Le code suivant est un exemple flagrant de ce qu'il ne faut pas faire :
 
 	```javascript
 
@@ -787,9 +791,9 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	for(i=0;i<els.length;i++){a.push(els[i]);}
 	```
 
-	Vous avez peut être déjà écrit un code comme ci-dessus - nous espérons que cette mauvaise pratique se terminera aujourd'hui.
+	Vous avez peut-être déjà écrit un code comme ci-dessus - nous espérons que cette mauvaise pratique se terminera aujourd'hui.
 
-	Ci-dessous la même logique, avec plus de clarté et surtout plus de lisibilité fonctionnelle:
+	Ci-dessous la même logique, avec plus de clarté et surtout plus de lisibilité fonctionnelle :
 
 	```javascript
 
@@ -811,20 +815,20 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	```
 
-	Quelques conseilles supplémentaires:
+	Quelques conseils supplémentaires :
 
 	```javascript
 
 	// 6.3.1
-	// Nommage des chaines de caractères "string"
+	// Nommage des chaînes de caractères "string"
 
-	`dog` est une chaine de caractère
+	`dog` est une chaîne de caractère
 
 
 	// 6.3.2
-	// Nommage des chaines des tableaux "array"
+	// Nommage des chaînes des tableaux "array"
 
-	`dogs` est un tableau de `dog` chaine de caractère
+	`dogs` est un tableau de `dog` chaîne de caractère
 
 
 	// 6.3.3
@@ -866,7 +870,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	Il semble y avoir des améliorations radicales à l'exécution des déclarations de `switch` dans les dernières version de Firefox et Chrome.
 	http://jsperf.com/switch-vs-object-literal-vs-module
 
-	Des améliorations notables sont également visibles ici:
+	Des améliorations notables sont également visibles ici :
 	https://github.com/rwldrn/idiomatic.js/issues/13
 
 	```javascript
@@ -887,7 +891,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	}
 
 	// 7.A.1.2
-	// Une meilleure approche est d'utiliser un object literal ou même un module:
+	// Une meilleure approche est d'utiliser un object littéral ou même un module :
 
 	var switchObj = {
 		alpha: function() {
@@ -923,21 +927,21 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 
 	// 7.A.1.3
-	// Si `foo` est une propriété de `switchObj` ou de `switchModule`, l'exécuter comme une méthode ...
+	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-	// Si vous connaissez et avez confiance en la valeur de `foo`, vous pouvez même omettre la vérification de la relation objet.
-	// et ne laisser que l'exécution :
+	// If you know and trust the value of `foo`, you could even omit the OR check
+	// leaving only the execution:
 
 	switchObj[ foo ]( args );
 
 	switchModule[ foo ]( args );
 
 
-	// Ce modèle promeut également la réusabilité du code.
+	// This pattern also promotes code reusability.
 
 	```
 
@@ -946,7 +950,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```javascript
 
 	// 7.B.1.1
-	// Mauvais :
+	// Bad:
 	function returnLate( foo ) {
 		var ret;
 
@@ -958,7 +962,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 		return ret;
 	}
 
-	// Correct : 
+	// Good:
 	function returnEarly( foo ) {
 
 		if ( foo ) {
@@ -972,11 +976,11 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 8. <a name="native">Native & Host Objects</a>
 
-        Le principe de base est ici:
+        Le principe de base est ici :
 
 	### Ne faites pas de choses stupides et tout sera OK.
 
-	Pour renforcer ce concept, s'il vous plaît regarder la présentation suivante:
+	Pour renforcer ce concept, regardez s'il vous plaît la présentation suivante :
 
 	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -988,19 +992,19 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 9. <a name="comments">Commentaires</a>
 
 	* Le style de commentaire JSDoc est bon (Closure Compiler type hints++)
-	* Une seule ligne de commentaire au-dessus du code surlequel il s'applique
+	* Une seule ligne de commentaire au-dessus du code auquel il s'applique
 	* L'utilisation de plusieurs lignes est bonne
-	* Les commentaires en find de ligne sont interdits!
+	* Les commentaires en fin de ligne sont interdits !
 
 
-10. <a name="language">Un code, un language</a>
+10. <a name="language">Un code, un langage</a>
 
-	Les programmes doivent être rédigés dans un language, quelque soit le language, le mainteneur ou les mainteneurs doivent donner les bonnes pratiques.
+	Les programmes doivent être rédigés dans un langage, quel que soit le langage, le mainteneur ou les mainteneurs doivent donner les bonnes pratiques.
 
 
 ## Appendice
 
-### Virgule en début de ligne ('comma-first').
+### Virgule en début de ligne.
 
 
-Tout projet qui cite ce document comme son guide de style de base ne pourra utiliser le formatage 'Comma-first', c'est à dire avec la virgule en début de signe, sauf mention contraire explicite de l'auteur du projet.
+Tout projet qui cite ce document comme son guide de style de base ne pourra accepter le formatage du code 'virgule en début de ligne', sauf mention contraire.
